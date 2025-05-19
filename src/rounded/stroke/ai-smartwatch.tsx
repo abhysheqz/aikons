@@ -1,0 +1,37 @@
+import React from "react";
+const AiSmartwatch: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeWidth={1.5}
+        d="M14.121 17.121C13.243 18 11.828 18 9 18s-4.243 0-5.121-.879C3 16.243 3 14.828 3 12s0-4.243.879-5.121C4.757 6 6.172 6 9 6s4.243 0 5.121.879"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M20.25 6.75 18 9h-2m3.5-2.25a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0M20.25 17.25 18 15h-2m3.5 2.25a.75.75 0 1 1 1.5 0 .75.75 0 0 1-1.5 0M20.25 12H12m7.5 0a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0"
+      />
+      <path
+        stroke="currentColor"
+        strokeWidth={1.5}
+        d="m13 6-.272-1.09c-.335-1.338-.502-2.007-.978-2.42a2 2 0 0 0-.165-.129C11.07 2 10.38 2 9 2s-2.069 0-2.585.361q-.086.06-.165.129c-.476.413-.643 1.082-.978 2.42L5 6M5 18l.272 1.09c.335 1.338.502 2.007.978 2.42q.08.069.165.129C6.93 22 7.62 22 9 22s2.069 0 2.585-.361q.085-.06.165-.129c.476-.413.643-1.082.978-2.42L13 18"
+      />
+    </svg>
+  );
+};
+export default AiSmartwatch;

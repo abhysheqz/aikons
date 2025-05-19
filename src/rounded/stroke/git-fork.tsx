@@ -1,0 +1,31 @@
+import React from "react";
+const GitFork: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeWidth={1.5}
+        d="M6 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4ZM12 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4ZM18 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M6.017 8.74c0 1.674-.242 3.46 3.204 3.246h2.784m5.988-3.41c.133 3.41-1.073 3.189-2.207 3.41h-3.78m0 3.714v-3.714"
+      />
+    </svg>
+  );
+};
+export default GitFork;

@@ -1,0 +1,32 @@
+import React from "react";
+const Unlink_03: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeWidth={1.5}
+        d="m9.524 14.437 4.913-4.914"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M21.016 16.009h-2.004m-3.005 5.01v-2.004M2.983 7.992h2.004m3.005-5.01v2.004M15.108 12.569c1.14.74 2.308.542 3.163-.312l2.994-2.995a2.505 2.505 0 0 0 0-3.543L18.28 2.733a2.504 2.504 0 0 0-3.543 0l-2.994 2.995c-.702.702-1.107 2.036-.277 3.182M12.569 15.109c.74 1.14.542 2.309-.312 3.163l-2.995 2.995a2.504 2.504 0 0 1-3.542 0l-2.985-2.986a2.505 2.505 0 0 1 0-3.542l2.994-2.996c.702-.701 2.036-1.107 3.182-.277"
+      />
+    </svg>
+  );
+};
+export default Unlink_03;

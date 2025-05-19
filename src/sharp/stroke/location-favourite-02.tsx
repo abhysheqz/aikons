@@ -1,0 +1,31 @@
+import React from "react";
+const LocationFavourite_02: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M12 2c-4.418 0-8 3.618-8 8.08 0 2.553 1 4.537 3 6.309 1.41 1.25 3.975 3.929 5 5.61 1.077-1.648 3.59-4.36 5-5.61 2-1.772 3-3.756 3-6.308C20 5.618 16.418 2 12 2Z"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeWidth={1.5}
+        d="M14.743 7.29C13.146 6.457 12 7.684 12 7.684s-1.146-1.227-2.743-.394C7.323 8.298 7.184 12.247 12 14c4.816-1.753 4.677-5.702 2.743-6.71Z"
+      />
+    </svg>
+  );
+};
+export default LocationFavourite_02;

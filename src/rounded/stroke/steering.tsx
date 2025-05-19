@@ -1,0 +1,38 @@
+import React from "react";
+const Steering: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeWidth={1.5}
+        d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10Z"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M18.918 10.413c-.969.424-2.433.805-3.758.304C13.264 10 12.29 10 12 10s-1.264 0-3.16.717c-1.325.501-2.79.12-3.758-.305M19 13.256c-2.145.408-5.392 1.623-5.476 5.745m-3.048 0c-.084-4.122-3.33-5.337-5.476-5.745"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M12.008 13h-.009"
+      />
+    </svg>
+  );
+};
+export default Steering;

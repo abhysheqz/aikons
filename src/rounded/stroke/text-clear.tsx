@@ -1,0 +1,39 @@
+import React from "react";
+const TextClear: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M11 20.001H5"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeWidth={1.5}
+        d="M12 4 8 20m4-16c1.387 0 3.17.03 4.588.176.6.062.9.093 1.166.202a2.05 2.05 0 0 1 1.165 1.299C19 5.954 19 6.27 19 6.902M12 4c-1.387 0-3.17.03-4.588.176-.6.062-.9.093-1.166.202A2.05 2.05 0 0 0 5.08 5.677C5 5.954 5 6.27 5 6.902"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="m14 15 5 5m-5 0 5-5"
+      />
+    </svg>
+  );
+};
+export default TextClear;

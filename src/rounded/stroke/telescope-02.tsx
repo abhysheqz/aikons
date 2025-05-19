@@ -1,0 +1,39 @@
+import React from "react";
+const Telescope_02: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="m19 22-5-9-5 9"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M15.92 4 7.027 9.256c-.982.58-1.319 1.866-.752 2.872l1.027 1.82a2.03 2.03 0 0 0 2.806.77L19 9.462"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M16.22 4.456a1.637 1.637 0 0 1 2.834-1.637l2.727 4.725a1.637 1.637 0 0 1-2.834 1.637zM2 14.265l.738 1.367m0 0L3.476 17m-.738-1.368L6.5 13.5"
+      />
+    </svg>
+  );
+};
+export default Telescope_02;

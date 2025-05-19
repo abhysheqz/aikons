@@ -1,0 +1,25 @@
+import React from "react";
+const ModernTv: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeWidth={1.5}
+        d="M2 10c0-3.771 0-5.657 1.172-6.828S6.229 2 10 2h4c3.771 0 5.657 0 6.828 1.172S22 6.229 22 10s0 5.657-1.172 6.828S17.771 18 14 18h-4c-3.771 0-5.657 0-6.828-1.172S2 13.771 2 10ZM16 22a8.4 8.4 0 0 0-4-1 8.4 8.4 0 0 0-4 1"
+      />
+    </svg>
+  );
+};
+export default ModernTv;

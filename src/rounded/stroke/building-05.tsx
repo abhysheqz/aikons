@@ -1,0 +1,50 @@
+import React from "react";
+const Building_05: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeWidth={1.5}
+        d="M2 22h20"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M18 9h-4c-2.482 0-3 .518-3 3v10h10V12c0-2.482-.518-3-3-3Z"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M15 22H3V5c0-2.482.518-3 3-3h6c2.482 0 3 .518 3 3v4"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeWidth={1.5}
+        d="M3 6h3m-3 4h3m-3 4h3M15 13h2m-2 3h2"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M16 22v-3"
+      />
+    </svg>
+  );
+};
+export default Building_05;

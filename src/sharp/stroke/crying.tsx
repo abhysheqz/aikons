@@ -1,0 +1,31 @@
+import React from "react";
+const Crying: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M15.5 21.37A10 10 0 0 1 12 22a10 10 0 0 1-3.5-.63M3.338 17A9.95 9.95 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10c0 1.821-.487 3.53-1.338 5"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M9 16c.836-.628 1.874-1 3-1s2.164.372 3 1M9.5 9.5H7.707c-.453 0-.887.18-1.207.5m8-.5h1.793c.453 0 .887.18 1.207.5M6 13v9m12-9v9"
+      />
+    </svg>
+  );
+};
+export default Crying;

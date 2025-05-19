@@ -1,0 +1,36 @@
+import React from "react";
+const Gps_01: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeWidth={1.5}
+        d="M20.514 12a8.5 8.5 0 1 1-17 0 8.5 8.5 0 0 1 17 0Z"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M22.5 12h-2M3.5 12h-2M12 1.5v2M12 20.5v2"
+      />
+      <path
+        stroke="currentColor"
+        strokeWidth={1.5}
+        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+      />
+    </svg>
+  );
+};
+export default Gps_01;

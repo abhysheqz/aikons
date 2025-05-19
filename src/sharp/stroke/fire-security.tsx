@@ -1,0 +1,30 @@
+import React from "react";
+const FireSecurity: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeWidth={1.5}
+        d="M19.5 16.5V15a2 2 0 1 0-4 0v1.5m-1.5 0h7V22h-7z"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M10.945 22C6.557 22 3 18.418 3 14c0-2.084.958-4.168 2.21-6 .256 1.5 1.365 4.4 3.749 4-2.624-5.5 1.986-10 1.986-10s.497 3.5 4.966 7q.62.486 1.089 1"
+      />
+    </svg>
+  );
+};
+export default FireSecurity;

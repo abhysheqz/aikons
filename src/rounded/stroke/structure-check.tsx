@@ -1,0 +1,38 @@
+import React from "react";
+const StructureCheck: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeWidth={1.5}
+        d="M15.022 5c0-1.414 0-2.121.51-2.56.512-.44 1.335-.44 2.98-.44s2.468 0 2.98.44c.51.439.51 1.146.51 2.56s0 2.121-.51 2.56c-.512.44-1.335.44-2.98.44s-2.468 0-2.98-.44c-.51-.439-.51-1.146-.51-2.56ZM15.022 19c0-1.414 0-2.121.51-2.56.512-.44 1.335-.44 2.98-.44s2.468 0 2.98.44c.51.439.51 1.146.51 2.56s0 2.121-.51 2.56c-.512.44-1.335.44-2.98.44s-2.468 0-2.98-.44c-.51-.439-.51-1.146-.51-2.56Z"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M7.055 17.043c2.77 0 4.975-2.26 4.975-5.038a5.023 5.023 0 0 0-5.016-5.03m.041 10.068c-2.77 0-5.057-2.26-5.057-5.038a5.023 5.023 0 0 1 5.016-5.03m.041 10.068c-.07 2.13 1.49 2.908 2.6 2.948h2.375M7.014 6.975c-.07-2.16 1.516-2.92 2.64-2.967h2.386"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="m8.71 10.879-2.072 2.167a.2.2 0 0 1-.287.001l-.972-1.001"
+      />
+    </svg>
+  );
+};
+export default StructureCheck;

@@ -1,0 +1,43 @@
+import React from "react";
+const SpoonAndKnife: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeWidth={1.5}
+        d="M6.5 17.33A6.99 6.99 0 0 0 12 20c1.959 0 3.73-.805 5-2.101M8.5 6.936A6.97 6.97 0 0 1 12 6c1.959 0 3.73.804 5 2.101"
+      />
+      <path
+        stroke="currentColor"
+        strokeWidth={1.5}
+        d="M16 13a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M19.5 13V4h.5a2 2 0 0 1 2 2v7zm0 0v7"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeWidth={1.5}
+        d="M4 9c1.105 0 2-.62 2-2s-.895-3-2-3-2 1.62-2 3 .895 2 2 2Zm0 0v11"
+      />
+    </svg>
+  );
+};
+export default SpoonAndKnife;

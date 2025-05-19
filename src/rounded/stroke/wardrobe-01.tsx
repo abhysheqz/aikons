@@ -1,0 +1,26 @@
+import React from "react";
+const Wardrobe_01: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M6 20v2m12-2v2M3 14V8c0-2.828 0-4.243.93-5.121S6.358 2 9.353 2h5.294c2.995 0 4.492 0 5.423.879C21 3.757 21 5.172 21 8v6c0 2.828 0 4.243-.93 5.121S17.642 20 14.647 20H9.353c-2.995 0-4.492 0-5.423-.879C3 18.243 3 16.828 3 14M12 20V2M3 14h9M3 8h9M15 11.5v-1"
+      />
+    </svg>
+  );
+};
+export default Wardrobe_01;

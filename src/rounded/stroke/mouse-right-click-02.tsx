@@ -1,0 +1,40 @@
+import React from "react";
+const MouseRightClick_02: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeWidth={1.5}
+        d="M13.5 2.09a20 20 0 0 0-2-.09c-.925 0-1.837.078-2.735.188-2.44.3-4.334 2.332-4.524 4.723C4.109 8.568 4 10.268 4 12s.11 3.432.24 5.089c.19 2.391 2.084 4.422 4.525 4.723.898.11 1.81.188 2.735.188s1.837-.078 2.735-.188c2.44-.301 4.335-2.332 4.524-4.723.132-1.657.241-3.357.241-5.089q-.001-1.008-.044-2"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M11.5 2v9M18.5 11h-14"
+      />
+      <circle
+        cx={2.5}
+        cy={2.5}
+        r={2.5}
+        stroke="currentColor"
+        strokeWidth={1.5}
+        transform="matrix(-1 0 0 1 20 2.5)"
+      />
+    </svg>
+  );
+};
+export default MouseRightClick_02;

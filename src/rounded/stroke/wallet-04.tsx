@@ -1,0 +1,33 @@
+import React from "react";
+const Wallet_04: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeLinecap="square"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M3 8.5h12c2.828 0 4.243 0 5.121.879.879.878.879 2.293.879 5.121v1c0 2.828 0 4.243-.879 5.121-.878.879-2.293.879-5.121.879H9c-2.828 0-4.243 0-5.121-.879C3 19.743 3 18.328 3 15.5z"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M15 8.498V4.11a1.61 1.61 0 0 0-2.347-1.432L3.763 7.25C3.293 7.49 3 7.972 3 8.5"
+      />
+    </svg>
+  );
+};
+export default Wallet_04;

@@ -1,0 +1,36 @@
+import React from "react";
+const Biscuit: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M14.008 11h-.01M8.008 16h-.01"
+      />
+      <path
+        stroke="currentColor"
+        strokeWidth={1.5}
+        d="M6.249 9.303c-.457 1.035-.267 2.186.424 2.571.69.385 1.621-.142 2.078-1.177s.267-2.186-.424-2.571c-.69-.385-1.621.142-2.078 1.177ZM13.177 15.872c-.39.752-.113 1.643.617 1.99.731.347 1.64.018 2.03-.734s.112-1.643-.618-1.99c-.731-.347-1.64-.018-2.03.734Z"
+      />
+      <path
+        stroke="currentColor"
+        strokeWidth={1.5}
+        d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2h.535A4 4 0 0 0 16 8c.651 0 1.81-.432 1.81-.432C17.81 10 19.343 11 21 11q.49-.002.935-.149Q22 11.418 22 12c0 5.523-4.477 10-10 10Z"
+      />
+    </svg>
+  );
+};
+export default Biscuit;

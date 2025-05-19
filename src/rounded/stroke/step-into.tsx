@@ -1,0 +1,33 @@
+import React from "react";
+const StepInto: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="m9 14 1.586 1.84c.666.773 1 1.16 1.414 1.16s.748-.387 1.414-1.16L15 14"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M12 16.5V12c0-3.771 0-5.657-1.172-6.828S7.771 4 4 4H3M3 20h6M15 20h6"
+      />
+    </svg>
+  );
+};
+export default StepInto;

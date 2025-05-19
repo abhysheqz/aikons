@@ -1,0 +1,29 @@
+import React from "react";
+const CircleLockAdd_01: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        fillRule="evenodd"
+        d="M17.75 18.75v3h-2v-3h-3v-2h3v-3h2v3h3v2zM5.5 6.75a5.5 5.5 0 1 1 11 0v3h-2v-3a3.5 3.5 0 1 0-7 0v3h-2z"
+        clipRule="evenodd"
+      />
+      <path
+        fill="currentColor"
+        d="M11 7.25a7.75 7.75 0 1 0 3.25 14.788V20.25h-3v-5h3v-3h3.998a7.75 7.75 0 0 0-7.248-5"
+      />
+    </svg>
+  );
+};
+export default CircleLockAdd_01;

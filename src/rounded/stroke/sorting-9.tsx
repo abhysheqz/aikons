@@ -1,0 +1,26 @@
+import React from "react";
+const Sorting_9: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M7 10V3.947c0-.574 0-.862-.23-.933-.507-.157-1.27.984-1.27.984m1.5 6H5.5M7 10h1.5M9 17.5v-1.75c0-.826 0-1.238-.293-1.495C8.414 14 7.943 14 7 14s-1.414 0-1.707.256C5 14.512 5 14.925 5 15.75c0 .825 0 1.238.293 1.494s.764.256 1.707.256zm0 0v.874c0 1.238 0 1.856-.44 2.24C8.122 21 7.415 21 6 21H5M16.5 20V4m0 16c-.7 0-2.008-1.995-2.5-2.5m2.5 2.5c.7 0 2.009-1.995 2.5-2.5"
+      />
+    </svg>
+  );
+};
+export default Sorting_9;

@@ -1,0 +1,36 @@
+import React from "react";
+const ShareKnowledge: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M2 11c2.332-2.442 5.643-2.557 8 0M8.495 4.5c0 1.38-1.12 2.5-2.503 2.5a2.5 2.5 0 0 1-2.504-2.5c0-1.38 1.12-2.5 2.504-2.5a2.5 2.5 0 0 1 2.503 2.5ZM14 22c2.332-2.442 5.643-2.557 8 0m-1.505-6.5c0 1.38-1.12 2.5-2.504 2.5a2.5 2.5 0 0 1-2.503-2.5c0-1.38 1.12-2.5 2.503-2.5a2.5 2.5 0 0 1 2.504 2.5Z"
+      />
+      <path
+        stroke="currentColor"
+        strokeWidth={1.5}
+        d="M3 14c0 3.87 3.13 7 7 7v-2.5"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M15 3h6m-6 3h6m-6 3h3.5"
+      />
+    </svg>
+  );
+};
+export default ShareKnowledge;

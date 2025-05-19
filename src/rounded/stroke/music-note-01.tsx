@@ -1,0 +1,48 @@
+import React from "react";
+const MusicNote_01: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M7 9.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0m0 0V2c.333.5.6 2.6 3 3"
+      />
+      <circle
+        cx={10.5}
+        cy={19.5}
+        r={2.5}
+        stroke="currentColor"
+        strokeWidth={1.5}
+      />
+      <circle cx={20} cy={18} r={2} stroke="currentColor" strokeWidth={1.5} />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M13 19.5V11c0-.91 0-1.365.247-1.648.246-.282.747-.35 1.748-.487 3.014-.411 5.206-1.667 6.375-2.436.28-.184.42-.276.525-.22s.105.223.105.554v11.163"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M13 13c4.8 0 8-2.333 9-3"
+      />
+    </svg>
+  );
+};
+export default MusicNote_01;

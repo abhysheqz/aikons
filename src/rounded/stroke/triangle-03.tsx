@@ -1,0 +1,34 @@
+import React from "react";
+const Triangle_03: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M3 17.336V7.104c0-1.882 0-2.824.569-3.058.568-.234 1.237.432 2.576 1.762l12.131 12.065c1.339 1.33 2.008 1.996 1.772 2.562-.235.565-1.181.565-3.074.565H6.684c-1.737 0-2.605 0-3.144-.537-.54-.536-.54-1.4-.54-3.127M20.916 12.837 17.48 9.42m3.436 3.417c.162-.16.042-1.484.03-2.324m-.03 2.324c-.162.16-.917.052-2.308-.019M11.129 3.083 14.565 6.5m-3.436-3.417c-.162.16-.042 1.484-.03 2.324m.03-2.324c.162-.16.917-.052 2.308.019M20.909 3.084 17.473 6.5m3.436-3.416c-.161-.162-1.493-.042-2.337-.03m2.337.03c.16.16.052.912-.019 2.295"
+      />
+      <ellipse
+        cx={16.088}
+        cy={8.015}
+        stroke="currentColor"
+        strokeWidth={1.5}
+        rx={1.383}
+        ry={1.375}
+      />
+    </svg>
+  );
+};
+export default Triangle_03;

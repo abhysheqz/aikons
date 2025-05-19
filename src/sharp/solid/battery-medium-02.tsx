@@ -1,0 +1,25 @@
+import React from "react";
+const BatteryMedium_02: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        fillRule="evenodd"
+        d="M1.252 6a.75.75 0 0 1 .75-.75h17a.75.75 0 0 1 .75.75v2.866l3 .507v5.254l-3 .507V18a.75.75 0 0 1-.75.75h-17a.75.75 0 0 1-.75-.75zm18.5 7.613v-3.226l1.5.254v2.719zM5.252 9v6h1.5V9zm3 6V9h1.5v6zm3-6v6h1.5V9z"
+        clipRule="evenodd"
+      />
+    </svg>
+  );
+};
+export default BatteryMedium_02;

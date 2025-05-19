@@ -1,0 +1,36 @@
+import React from "react";
+const Mouse_12: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeWidth={1.5}
+        d="M12 22c5.6 0 7-3.834 7-8.5S17.6 5 12 5s-7 3.833-7 8.5S6.4 22 12 22Z"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M12 8V2"
+      />
+      <path
+        stroke="currentColor"
+        strokeWidth={1.5}
+        d="M10.5 9.5c0-.466 0-.699.076-.883a1 1 0 0 1 .541-.54C11.301 8 11.534 8 12 8s.699 0 .883.076a1 1 0 0 1 .54.541c.077.184.077.417.077.883v1c0 .466 0 .699-.076.883a1 1 0 0 1-.541.54C12.699 12 12.466 12 12 12s-.699 0-.883-.076a1 1 0 0 1-.54-.541c-.077-.184-.077-.417-.077-.883z"
+      />
+    </svg>
+  );
+};
+export default Mouse_12;

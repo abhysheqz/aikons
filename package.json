@@ -1,0 +1,47 @@
+{
+  "name": "aikons",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup src"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    },
+    "./rounded": {
+      "types": "./dist/rounded/index.d.ts",
+      "require": "./dist/rounded/index.js",
+      "import": "./dist/rounded/index.mjs"
+    },
+    "./rounded/*": {
+      "types": "./dist/rounded/*/index.d.ts",
+      "require": "./dist/rounded/*/index.js",
+      "import": "./dist/rounded/*/index.mjs"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "rounded/*": [
+        "dist/rounded/*/index.d.ts",
+        "dist/rounded/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "packageManager": "pnpm@10.11.0",
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "@types/react": "^19.1.4"
+  }
+}

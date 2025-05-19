@@ -1,0 +1,29 @@
+import React from "react";
+const SwipeUp_05: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        fill="currentColor"
+        fillRule="evenodd"
+        d="M17.793 1.293a1 1 0 0 1 1.414 0l2.5 2.5A1 1 0 0 1 21 5.5h-1.5V8a1 1 0 1 1-2 0V5.5H16a1 1 0 0 1-.707-1.707z"
+        clipRule="evenodd"
+      />
+      <path
+        fill="currentColor"
+        d="M6.25 20.733 1.329 13.61a1.696 1.696 0 0 1 2.707-2.04l1.838 2.24a.45.45 0 0 0 .776-.31V2.567a1.317 1.317 0 1 1 2.634 0V10.5a.45.45 0 1 0 .9 0V7.87c.189-.063.457-.107.568-.121s.25 0 .25 0c.655 0 1.256.229 1.728.61v3.14a.45.45 0 1 0 .9 0v-2.75h.372c.854 0 1.617.39 2.121 1l.053.05v2.7a.45.45 0 1 0 .9 0v-2.75a2.75 2.75 0 0 1 2.675 2.75v4.097a4.75 4.75 0 0 1-1.04 2.967l-.96 1.199v1.237a.75.75 0 0 1-.75.75H7a.75.75 0 0 1-.75-.75z"
+      />
+    </svg>
+  );
+};
+export default SwipeUp_05;

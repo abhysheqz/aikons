@@ -1,0 +1,32 @@
+import React from "react";
+const ChartScatter: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M18 11h.009M20 4h.009M11 6h.009M11 11h.009M9 16h.009"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeWidth={1.5}
+        d="M21 21H10c-3.3 0-4.95 0-5.975-1.025S3 17.3 3 14V3"
+      />
+    </svg>
+  );
+};
+export default ChartScatter;

@@ -1,0 +1,32 @@
+import React from "react";
+const PoundSquare: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M19.5 2.5a2 2 0 0 1 2 2v15a2 2 0 0 1-2 2h-15a2 2 0 0 1-2-2v-15a2 2 0 0 1 2-2z"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M14.5 10a2.5 2.5 0 1 0-2.5 2.5m0 0h1m-1 0h-1m-2.5 0H11m0 0c0 1-1 3.5-2.5 4h5.528a2 2 0 0 0 .894-.211L15.5 16"
+      />
+    </svg>
+  );
+};
+export default PoundSquare;

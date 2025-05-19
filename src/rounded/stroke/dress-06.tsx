@@ -1,0 +1,33 @@
+import React from "react";
+const Dress_06: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M5.177 9.032c3.726 3.637-2.052 8.337.48 11.531 1.402 1.768 11.073 2.059 12.705 0 2.53-3.192-3.233-7.887.48-11.53"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M6.355 13c-2.265-.21-4.112-1.672-4.345-3.762a1.8 1.8 0 0 1 .128-.874c.715-1.793 2.714-4.834 5.778-6.317a.49.49 0 0 1 .6.147c.76.973 2.069 2.49 3.484 2.49s2.724-1.517 3.484-2.49a.49.49 0 0 1 .6-.147c3.064 1.483 5.063 4.524 5.778 6.317.11.279.161.577.128.874-.233 2.09-2.06 3.55-4.326 3.76"
+      />
+    </svg>
+  );
+};
+export default Dress_06;

@@ -1,0 +1,31 @@
+import React from "react";
+const Notebook_02: React.FC<
+  {
+    size?: number | string | undefined,
+  } & React.ComponentProps<"svg">
+> = ({ size = 24, ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      fill="none"
+      viewBox="0 0 24 24"
+      {...props}
+    >
+      <path
+        stroke="currentColor"
+        strokeWidth={1.5}
+        d="M22 14v-4c0-3.771 0-5.657-1.172-6.828S17.771 2 14 2h-2C8.229 2 6.343 2 5.172 3.172S4 6.229 4 10v4c0 3.771 0 5.657 1.172 6.828S8.229 22 12 22h2c3.771 0 5.657 0 6.828-1.172S22 17.771 22 14Z"
+      />
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={1.5}
+        d="M5 6H2m3 6H2m3 6H2M17.5 7h-4m2 4h-2M9 22V2"
+      />
+    </svg>
+  );
+};
+export default Notebook_02;
